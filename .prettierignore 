@@ -1,2 +1,3 @@
 package.json
 package-lock.json
+src/styles/sanitize.css
