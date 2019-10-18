@@ -7,7 +7,7 @@ function Header() {
   return (
     <Layout>
       <Link to="/">Favourite</Link>
-      <Link to="/currency">Currency</Link>
+      <Link to="/rates">Rates</Link>
     </Layout>
   );
 }

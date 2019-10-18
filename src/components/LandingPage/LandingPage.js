@@ -1,10 +1,14 @@
 import React from 'react';
+import FavoriteItemsList from '../FavoriteItemsList';
 
 function LandingPage() {
   return (
-    <>
-      <h2>LandingPage</h2>
-    </>
+    <article>
+      <h1>Favorite Rates</h1>
+      <section>
+        <FavoriteItemsList />
+      </section>
+    </article>
   );
 }
 

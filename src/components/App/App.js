@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, withRouter, Switch } from 'react-router-dom';
 
-import { ROOT_PATH, CURRENCIES_PATH } from '../../constants/routes';
+import { ROOT_PATH, RATES_PATH } from '../../constants/routes';
 import Headers from '../Header';
 import LandingPage from '../LandingPage';
-import CurrenciesPage from '../CurrenciesPage';
+import RatePage from '../RatePage';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path={ROOT_PATH} component={LandingPage} />
-          <Route exact path={`/${CURRENCIES_PATH}`} component={CurrenciesPage} />
+          <Route exact path={`/${RATES_PATH}`} component={RatePage} />
         </Switch>
       </main>
     </>
