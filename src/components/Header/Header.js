@@ -1,13 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import RemoveAllButton from '../RemoveAllButton';
 import Layout from './Layout';
+import Content from './Content';
+import StyledLink from './StyledLink';
+import Wrapper from './Wrapper';
 
-function Header() {
+function Header({ followedRates }) {
   return (
     <Layout>
-      <Link to="/">Favourite</Link>
-      <Link to="/rates">Rates</Link>
+      <Content as="div">
+        <Wrapper>
+          <StyledLink bold as={Link} to="/">
+            Favourite
+          </StyledLink>
+          <StyledLink bold as={Link} to="/rates">
+            Rates
+          </StyledLink>
+        </Wrapper>
+        {followedRates && <RemoveAllButton />}
+      </Content>
     </Layout>
   );
 }

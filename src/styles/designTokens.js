@@ -2,9 +2,9 @@
 export const colorBlack = '#222222';
 export const colorTurquoise = '#00a09f';
 export const colorYellow = '#ffbf47';
+export const colorDarkGrey = '#666666';
 export const colorLightGrey = '#b0b0b0';
 export const colorWhite = '#ffffff';
-export const colorDarkGrey = '#666666';
 
 // Font weight
 export const fontWeightNormal = 400;

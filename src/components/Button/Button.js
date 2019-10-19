@@ -16,12 +16,11 @@ const Button = styled.button`
   display: block;
   font-size: ${fontMedium};
   font-weight: ${fontWeightBold};
-  padding: 1.2rem;
+  padding: 0.8rem;
   text-align: center;
   text-decoration: none;
   width: 100%;
-  max-width: 96rem;
-  margin: 0 auto;
+  max-width: 15rem;
 
   &:not(:disabled) {
     cursor: pointer;

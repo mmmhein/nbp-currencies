@@ -11,7 +11,7 @@ class RatePage extends React.Component {
   render() {
     return (
       <article>
-        <InfoBanner grey>
+        <InfoBanner>
           <strong>Exchange rates</strong>
         </InfoBanner>
         <Content>

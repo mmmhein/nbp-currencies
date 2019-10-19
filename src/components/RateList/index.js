@@ -4,7 +4,8 @@ import RateItemsList from './RateList';
 
 function mapStateToProps(state) {
   return {
-    rates: state.rates.items
+    rates: state.rates.items,
+    pending: state.rates.pending
   };
 }
 
