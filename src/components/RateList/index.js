@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import RateItemsList from './RateItemsList';
+import RateItemsList from './RateList';
 
 function mapStateToProps(state) {
   return {

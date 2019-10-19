@@ -1,21 +1,21 @@
-import { FAVORITE_RATES_ADD, FAVORITE_RATES_REMOVE, FAVORITE_RATES_REMOVE_ALL } from '../constants/actionTypes';
+import { FOLLOWED_RATES_ADD, FOLLOWED_RATES_REMOVE, FOLLOWED_RATES_REMOVE_ALL } from '../constants/actionTypes';
 
-export function addFavoriteRate(item) {
+export function addFollowedRate(item) {
   return {
-    type: FAVORITE_RATES_ADD,
+    type: FOLLOWED_RATES_ADD,
     item
   };
 }
 
-export function removeItemFavoriteRate(Id) {
+export function removeFollowedRate(id) {
   return {
-    type: FAVORITE_RATES_REMOVE,
-    Id
+    type: FOLLOWED_RATES_REMOVE,
+    id
   };
 }
 
-export function removeAllFavoriteRates() {
+export function removeAllFollowedRates() {
   return {
-    type: FAVORITE_RATES_REMOVE_ALL
+    type: FOLLOWED_RATES_REMOVE_ALL
   };
 }

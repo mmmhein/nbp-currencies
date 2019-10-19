@@ -1,13 +1,17 @@
 import React from 'react';
-import FavoriteItemsList from '../FavoriteItemsList';
+import FollowedRateList from '../FollowedRateList';
+import InfoBanner from '../InfoBanner';
+import Content from '../Content';
 
 function LandingPage() {
   return (
     <article>
-      <h1>Favorite Rates</h1>
-      <section>
-        <FavoriteItemsList />
-      </section>
+      <InfoBanner>
+        <strong>Favorite currencies</strong>
+      </InfoBanner>
+      <Content>
+        <FollowedRateList />
+      </Content>
     </article>
   );
 }

@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import rates from './ratesReducer';
-import favoriteRates from './favoriteRatesReducer';
+import followedRates from './followedRatesReducer';
 
 const rootReducer = combineReducers({
   rates,
-  favoriteRates
+  followedRates
 });
 
 export default rootReducer;
