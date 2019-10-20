@@ -6,6 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose",
+    "test:update": "npm run test -- --no-watch --updateSnapshot",
+    "test:ci": "npm test -- --no-watch --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.js\"",
     "format": "prettier --write \"src/**/*.js\"",
@@ -39,13 +41,21 @@
       "git add"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
   "dependencies": {
     "axios": "0.19.0",
+    "lodash.isempty": "4.4.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "7.1.1",
     "react-router-dom": "5.1.2",
     "react-scripts": "3.2.0",
+    "react-test-renderer": "16.10.2",
+    "react-testing-library": "8.0.1",
     "redux": "4.0.4",
     "redux-thunk": "2.3.0",
     "styled-components": "4.4.0"

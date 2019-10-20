@@ -1,6 +1,13 @@
 import { connect } from 'react-redux';
 
+import { removeFollowedRate } from '../../actions/favoriteRatesActions';
 import FollowedRateList from './FollowedRateList';
+
+function mapDispatchToProps(dispatch) {
+  return {
+    removeFollowedRate: id => dispatch(removeFollowedRate(id))
+  };
+}
 
 function mapStateToProps(state) {
   return {
@@ -8,4 +15,7 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(FollowedRateList);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(FollowedRateList);

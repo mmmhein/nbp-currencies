@@ -10,7 +10,7 @@ const StyledLink = styled(Text)`
   align-items: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding-right: ${spacingMedium};
+  padding: 0 ${spacingMedium};
   border-right: ${borderWidthThin} solid ${colorLightGrey};
 `;
 

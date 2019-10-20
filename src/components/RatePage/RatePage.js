@@ -3,23 +3,17 @@ import RateList from '../RateList';
 import Content from '../Content';
 import InfoBanner from '../InfoBanner';
 
-class RatePage extends React.Component {
-  componentDidMount() {
-    this.props.fetchRates();
-  }
-
-  render() {
-    return (
-      <article>
-        <InfoBanner>
-          <strong>Exchange rates</strong>
-        </InfoBanner>
-        <Content>
-          <RateList />
-        </Content>
-      </article>
-    );
-  }
+function RatePage() {
+  return (
+    <article>
+      <InfoBanner>
+        <strong>Kursy walut</strong>
+      </InfoBanner>
+      <Content>
+        <RateList />
+      </Content>
+    </article>
+  );
 }
 
 export default RatePage;

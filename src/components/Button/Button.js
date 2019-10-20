@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+
+import media from '../../styles/media';
 import {
   colorTurquoise,
   colorWhite,
@@ -6,7 +8,8 @@ import {
   fontWeightBold,
   borderWidthXThick,
   fontMedium,
-  colorDarkGrey
+  colorDarkGrey,
+  fontSmall
 } from '../../styles/designTokens';
 
 const Button = styled.button`
@@ -30,6 +33,11 @@ const Button = styled.button`
     outline: ${borderWidthXThick} solid ${colorYellow};
     outline-offset: 0;
   }
+
+  ${media.phone`
+    font-size: ${fontSmall}
+    max-width: 9rem;
+  `};
 `;
 
 export default Button;

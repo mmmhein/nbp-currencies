@@ -5,7 +5,7 @@ import { rate } from '../../types';
 import Text from './Text';
 import Wrapper from './Wrapper';
 
-function Rate({ controlsComponent: Controls, rate }) {
+function Rate({ rate, children }) {
   const { currency, code, mid } = rate;
 
   return (
@@ -13,15 +13,14 @@ function Rate({ controlsComponent: Controls, rate }) {
       <Text>{currency}</Text>
       <Text>{code}</Text>
       <Text bold>{mid}</Text>
-      <Controls rate={rate} />
+      {children}
     </Wrapper>
   );
 }
 
 Rate.propTypes = {
   rate: rate.isRequired,
-  /** Component that handle Rate state manipulation */
-  controlsComponent: PropTypes.object
+  children: PropTypes.node
 };
 
 export default Rate;

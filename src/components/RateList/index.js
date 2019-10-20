@@ -1,12 +1,26 @@
 import { connect } from 'react-redux';
 
+import { addFollowedRate } from '../../actions/favoriteRatesActions';
+import fetchRates from '../../services/rates';
 import RateItemsList from './RateList';
 
 function mapStateToProps(state) {
+  const { pending, items } = state.rates;
+
   return {
-    rates: state.rates.items,
-    pending: state.rates.pending
+    rates: items,
+    pending
   };
 }
 
-export default connect(mapStateToProps)(RateItemsList);
+function mapDispatchToProps(dispatch) {
+  return {
+    addFollowedRate: item => dispatch(addFollowedRate(item)),
+    fetchRates: () => dispatch(fetchRates())
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(RateItemsList);

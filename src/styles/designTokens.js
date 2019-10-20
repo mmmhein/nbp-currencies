@@ -11,6 +11,7 @@ export const fontWeightNormal = 400;
 export const fontWeightBold = 700;
 
 // Font size
+export const fontSmall = '1.4rem';
 export const fontMedium = '1.8rem';
 
 // Spacing (mainly for paddings and margins)
