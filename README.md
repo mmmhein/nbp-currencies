@@ -18,16 +18,11 @@ Other scripts which could be helpful:
 * `npm run format` - formats whole codebase with prettier
 
 ### ⚙️ Solutions ⚙️
-List of proven, backed by big communities solutions, which help to deliver **high-quality** code without too much friction:
+List of proven, backed by big communities solutions, which help to deliver **high-quality** code:
 * [Create-react-app](https://github.com/facebook/create-react-app)
 * [Jest](https://jestjs.io/) as automated unit test runner
-  * unit tests collocated with components
 * Application styled with [styled-components](https://www.styled-components.com/)
-  * each component has it's own isolated style
-  * compose components not styles -- prevents huge amount of duplication in large codebases
 * Automatic code formatting with [prettier](https://prettier.io/)
-  * no more arguments such as tabs vs spaces, single quotes vs double, etc.
-  * more pleasant to work with codebase
 * [Eslint](https://eslint.org/)
 
 ### :loudspeaker: Overview
