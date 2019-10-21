@@ -23,7 +23,7 @@ function FollowedRateList({ followedRates, removeFollowedRate }) {
 }
 
 FollowedRateList.propTypes = {
-  followedRates: PropTypes.arrayOf(rate),
+  followedRates: PropTypes.arrayOf(rate).isRequired,
   removeFollowedRate: PropTypes.func.isRequired
 };
 

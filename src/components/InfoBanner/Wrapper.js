@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { colorTurquoise, colorWhite, fontMedium, spacingSmall, colorDarkGrey } from '../../styles/designTokens';
 
 const Wrapper = styled.section`

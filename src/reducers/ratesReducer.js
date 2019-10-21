@@ -1,6 +1,6 @@
 import { FETCH_RATES_PENDING, FETCH_RATES_SUCCESS, FETCH_RATES_ERROR } from '../constants/actionTypes';
 
-const initialState = {
+export const initialState = {
   pending: false,
   items: [],
   error: null

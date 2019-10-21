@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { removeFollowedRate } from '../../actions/favoriteRatesActions';
+import { removeFollowedRate } from '../../actions/followedRatesActions';
 import FollowedRateList from './FollowedRateList';
 
 function mapDispatchToProps(dispatch) {

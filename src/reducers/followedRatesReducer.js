@@ -1,6 +1,6 @@
 import { FOLLOWED_RATES_ADD, FOLLOWED_RATES_REMOVE, FOLLOWED_RATES_REMOVE_ALL } from '../constants/actionTypes';
 
-const initialState = {
+export const initialState = {
   items: []
 };
 

@@ -9,7 +9,7 @@ function Rate({ rate, children }) {
   const { currency, code, mid } = rate;
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="rate">
       <Text>{currency}</Text>
       <Text>{code}</Text>
       <Text bold>{mid}</Text>

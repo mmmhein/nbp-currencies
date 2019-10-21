@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Rate renders correctly 1`] = `
+.c1 {
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #b0b0b0;
+  padding: 2rem 0;
+}
+
+<li
+  className="c0"
+  data-testid="rate"
+>
+  <Text
+    className="c1"
+  >
+    euro
+  </Text>
+  <Text
+    className="c1"
+  >
+    euro
+  </Text>
+  <Text
+    bold={true}
+    className="c1"
+  >
+    4
+  </Text>
+</li>
+`;

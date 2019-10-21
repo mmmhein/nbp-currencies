@@ -19,7 +19,6 @@ export const spacingLarge = '3rem';
 export const spacingMedium = '2rem';
 export const spacingSmall = '1rem';
 export const borderWidthXThick = '4px';
-export const borderWidthThick = '2px';
 export const borderWidthThin = '1px';
 
 // Z-index

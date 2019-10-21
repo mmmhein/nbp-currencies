@@ -1,30 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import isEmpty from 'lodash.isempty';
+import PropTypes from 'prop-types';
 
+import { rate } from '../../types';
 import { isLandingPage } from '../../utils';
 import RemoveAllButton from '../RemoveAllButton';
 import Layout from './Layout';
 import Content from './Content';
 import StyledLink from './StyledLink';
-import Wrapper from './Wrapper';
+import Navigation from './Navigation';
 
 function Header({ followedRates, location }) {
   return (
     <Layout>
       <Content as="div">
-        <Wrapper>
-          <StyledLink bold as={Link} to="/">
+        <Navigation>
+          <StyledLink as={Link} to="/">
             Ulubione
           </StyledLink>
-          <StyledLink bold as={Link} to="/rates">
+          <StyledLink as={Link} to="/rates">
             Waluty
           </StyledLink>
-        </Wrapper>
+        </Navigation>
         {!isEmpty(followedRates) && isLandingPage(location.pathname) && <RemoveAllButton />}
       </Content>
     </Layout>
   );
 }
+
+Header.propTypes = {
+  followedRates: PropTypes.arrayOf(rate).isRequired,
+  location: PropTypes.object.isRequired
+};
 
 export default Header;

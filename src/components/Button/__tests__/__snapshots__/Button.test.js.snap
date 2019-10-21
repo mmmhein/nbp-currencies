@@ -1,13 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Button renders correctly 1`] = `
+.c0 {
+  background: #00a09f;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.c0:not(:disabled) {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    font-size: 1.4rem;
+    max-width: 9rem;
+  }
+}
+
 <button
-  className="sc-bdVaJa cyKlHL"
+  className="c0"
 />
 `;
 
 exports[`COMPONENT - Button renders correctly grey button 1`] = `
+.c0 {
+  background: #666666;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.c0:not(:disabled) {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: 0;
+}
+
+@media (max-width:26.25em) {
+  .c0 {
+    font-size: 1.4rem;
+    max-width: 9rem;
+  }
+}
+
 <button
-  className="sc-bdVaJa ItcSe"
+  className="c0"
 />
 `;

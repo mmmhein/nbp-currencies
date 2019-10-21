@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <article>
       <InfoBanner>
-        <strong>Ulubione waluty</strong>
+        <strong data-testid="info-banner-favorite">Ulubione waluty</strong>
       </InfoBanner>
       <Content>
         <FollowedRateList />

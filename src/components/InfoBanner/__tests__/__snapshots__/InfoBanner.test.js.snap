@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - InfoBanner renders correctly 1`] = `
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #666666;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</section>
+`;
+
+exports[`COMPONENT - InfoBanner renders correctly with grey background 1`] = `
+.c1 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #666666;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</section>
+`;

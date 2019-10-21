@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import Text from '../Text';
 import { spacingMedium, borderWidthThin, colorLightGrey } from '../../styles/designTokens';
+import Text from '../Text';
 
 const StyledLink = styled(Text)`
   display: flex;

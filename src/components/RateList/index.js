@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { addFollowedRate } from '../../actions/favoriteRatesActions';
+import { addFollowedRate } from '../../actions/followedRatesActions';
 import fetchRates from '../../services/rates';
 import RateItemsList from './RateList';
 

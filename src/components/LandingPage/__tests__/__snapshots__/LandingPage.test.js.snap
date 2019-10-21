@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - LandingPage renders correctly 1`] = `
+.c0 {
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+<article>
+  <InfoBanner>
+    <strong
+      data-testid="info-banner-favorite"
+    >
+      Ulubione waluty
+    </strong>
+  </InfoBanner>
+  <section
+    className="c0"
+  >
+    <FollowedRateList />
+  </section>
+</article>
+`;
